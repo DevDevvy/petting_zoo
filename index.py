@@ -1,5 +1,5 @@
 from attractions import SnakePit, Wetlands, PettingZoo
-from animals import Cobra, Copperhead, Cottonmouth, King, Ratsnake, Eel, Goldfish, Guppy, Shark, Trout, Bear, Dog, Goat, Llama, Tiger
+from animals import Cobra, Copperhead, Cottonmouth, King, Ratsnake, Eel, Goldfish, Guppy, Shark, Trout, Bear, Dog, Goat, Llama, Tiger, Goose
 
 
 
@@ -49,4 +49,10 @@ fish_fortress.add_animal(flounder)
 fish_fortress.add_animal(toofs)
 fish_fortress.add_animal(trudy)
 
-print(spittle.feed())
+bob = Goose("Bob", "Canada goose", "watercress sandwiches", 5855)
+varmint_village.add_animal(bob)
+
+for animal in varmint_village.animals:
+    print(animal)
+    
+print(bob.feed())

@@ -15,3 +15,4 @@ from .ratsnake import Ratsnake
 from .shark import Shark
 from .tiger import Tiger
 from .trout import Trout
+from .goose import Goose

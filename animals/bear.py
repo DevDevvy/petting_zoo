@@ -1,12 +1,13 @@
 
 
 from animals import Animal
+from movements.walking import Walking
 
-class Bear(Animal):
+class Bear(Animal, Walking):
     
     def __init__(self, name, species, shift, food, chip_num):
       super().__init__(name, species, food, chip_num)
-      self.walking = True
+      Walking.__init__(self)
       self.shift = shift
     # setting class data type enforcer
     # @property

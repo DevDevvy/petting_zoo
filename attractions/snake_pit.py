@@ -1,8 +1,13 @@
-class SnakePit:
+
+
+
+from attractions import Attraction
+
+
+class SnakePit(Attraction):
 
     def __init__(self, name, description):
-        self.attraction_name = name
-        self.description = description
+        super().__init__(name, description)
         self.animals = list()
         
     @property

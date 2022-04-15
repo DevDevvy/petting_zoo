@@ -1,10 +1,13 @@
 
 from animals import Animal
+from movements.slithering import Slithering
+from movements.swimming import Swimming
 
-class Cottonmouth(Animal):
+class Cottonmouth(Animal, Slithering, Swimming):
     def __init__(self, name, species, food, chip_num):
       super().__init__(name, species, food, chip_num)
-      self.slithering = True
+      Slithering.__init__(self)
+      Swimming.__init__(self)
         
         
     

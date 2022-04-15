@@ -1,11 +1,12 @@
 
 
 from animals import Animal
+from movements.swimming import Swimming
 
-class Trout(Animal):
+class Trout(Animal, Swimming):
     def __init__(self, name, species, food, chip_num):
       super().__init__(name, species, food, chip_num)
-      self.swimming = True
+      Swimming.__init__(self)
         
     
     def __str__(self):
