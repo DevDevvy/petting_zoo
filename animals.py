@@ -9,7 +9,7 @@ slither_inn = SnakePit("Slither Inn", "slink around with some slippery sliding f
 fish_fortress = Wetlands("Fish Fortress", "swim in the puddle with some creepy critters")
 
 # walkers
-baloo = Bear("Baloo", "Bear", "morning", "people")
+baloo = Bear("Baloo", "Bear", "morning", "people", 22345)
 stripes = Tiger("Stripes", "Tiger", "evening", "people")
 spittle = Llama("Spittle", "Llama", "evening", "greens")
 billy = Goat("Billy", "Goat", "morning", "everything")
@@ -51,14 +51,25 @@ fish_fortress.add_animal(trudy)
 
 
 
-print(f'{varmint_village.attraction_name} is where you can find things like')
-for animal in varmint_village.animals:
-    print(f'    *{animal.name} the {animal.species}')
+# print(f'{varmint_village.attraction_name} is where you can find things like')
+# for animal in varmint_village.animals:
+#     print(f'    *{animal.name} the {animal.species}')
     
-print(f'{slither_inn.attraction_name} is where you can find things like')
-for animal in slither_inn.animals:
-    print(f'    *{animal.name} the {animal.species}')
+# print(f'{slither_inn.attraction_name} is where you can find things like')
+# for animal in slither_inn.animals:
+#     print(f'    *{animal.name} the {animal.species}')
     
-print(f'{fish_fortress.attraction_name} is where you can find things like')
-for animal in fish_fortress.animals:
-    print(f'    *{animal.name} the {animal.species}')
+# print(f'{fish_fortress.attraction_name} is where you can find things like')
+# for animal in fish_fortress.animals:
+#     print(f'    *{animal.name} the {animal.species}')
+    
+    
+slither_inn = SnakePit("The Slither Inn", "Scary snakes")
+sammy = Cobra("Sammy", "anaconda", "Ice Cube")
+shalene = Ratsnake("Shalene", "rat snake", "rats...duh")
+
+slither_inn.add_animal(sammy)
+slither_inn.add_animal(shalene)
+
+print(slither_inn.last_critter_added)
+# prints Shalene the rat snake
