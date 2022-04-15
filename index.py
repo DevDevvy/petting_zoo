@@ -55,4 +55,3 @@ varmint_village.add_animal(bob)
 for animal in varmint_village.animals:
     print(animal)
     
-print(bob.feed())
