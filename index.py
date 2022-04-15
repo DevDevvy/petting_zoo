@@ -1,7 +1,5 @@
 from attractions import SnakePit, Wetlands, PettingZoo
-from slithering import Cobra, Copperhead, Cottonmouth, King, Ratsnake
-from swimming import Eel, Goldfish, Guppy, Shark, Trout
-from walking import Bear, Dog, Goat, Llama, Tiger
+from animals import Cobra, Copperhead, Cottonmouth, King, Ratsnake, Eel, Goldfish, Guppy, Shark, Trout, Bear, Dog, Goat, Llama, Tiger
 
 
 
